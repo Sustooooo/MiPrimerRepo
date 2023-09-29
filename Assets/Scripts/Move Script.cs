@@ -5,6 +5,7 @@ using UnityEngine;
 public class MoveScript : MonoBehaviour
 {
     public float velocidad = 10;
+    [SerializeField] private Rigidbody rb;
 
     void Update()
     {
@@ -13,6 +14,6 @@ public class MoveScript : MonoBehaviour
         
         Vector3 movimiento = new Vector3(horizontal, 0, vertical) * velocidad * Time.deltaTime;
 
-        transform.Translate(movimiento);
+        rb.AddForce(movimiento);
     }
 }
