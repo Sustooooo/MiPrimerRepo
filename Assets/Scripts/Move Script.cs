@@ -5,10 +5,6 @@ using UnityEngine;
 public class MoveScript : MonoBehaviour
 {
     public float velocidad = 10;
-    void Start()
-    {
-        
-    }
 
     void Update()
     {
